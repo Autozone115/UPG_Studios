@@ -1,0 +1,11 @@
+import { Outlet } from "react-router";
+import { Navigation } from "./Navigation";
+
+export function Root() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-slate-100">
+      <Navigation />
+      <Outlet />
+    </div>
+  );
+}

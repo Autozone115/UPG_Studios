@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dev",
+      "runtimeExecutable": "C:\\Temp\\nodejs\\node-v22.14.0-win-x64\\npm.cmd",
+      "runtimeArgs": ["run", "dev"],
+      "env": {
+        "PATH": "C:\\Temp\\nodejs\\node-v22.14.0-win-x64"
+      },
+      "port": 5173
+    }
+  ]
+}
