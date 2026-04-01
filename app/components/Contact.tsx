@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { useState } from "react";
-import { Mail, MapPin, Send, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, MapPin, Send, Linkedin } from "lucide-react";
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -9,12 +9,26 @@ export function Contact() {
     subject: "",
     message: "",
   });
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission (mock)
-    console.log("Form submitted:", formData);
-    alert("Message sent! (This is a demo)");
+    setStatus("sending");
+    try {
+      const res = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (res.ok) {
+        setStatus("success");
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
   const handleChange = (
@@ -42,9 +56,7 @@ export function Contact() {
   ];
 
   const socialLinks = [
-    { icon: Github, label: "GitHub", href: "#" },
     { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/anivalramos115" },
-    { icon: Twitter, label: "Twitter", href: "#" },
   ];
 
   return (
@@ -238,14 +250,27 @@ export function Contact() {
                     />
                   </div>
 
+                  {/* Status Messages */}
+                  {status === "success" && (
+                    <div className="px-4 py-3 bg-green-500/10 border border-green-500/30 rounded-lg text-green-400 text-sm font-semibold text-center">
+                      Message sent! I'll get back to you soon.
+                    </div>
+                  )}
+                  {status === "error" && (
+                    <div className="px-4 py-3 bg-red-500/10 border border-red-500/30 rounded-lg text-red-400 text-sm font-semibold text-center">
+                      Something went wrong. Please try emailing me directly.
+                    </div>
+                  )}
+
                   {/* Submit Button */}
                   <motion.div whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}>
                     <button
                       type="submit"
-                      className="w-full group relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg font-semibold text-slate-950 hover:shadow-2xl hover:shadow-cyan-500/60 transition-all overflow-hidden"
+                      disabled={status === "sending"}
+                      className="w-full group relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg font-semibold text-slate-950 hover:shadow-2xl hover:shadow-cyan-500/60 transition-all overflow-hidden disabled:opacity-60 disabled:cursor-not-allowed"
                     >
                       <span className="relative z-10 flex items-center justify-center gap-2">
-                        Send Message
+                        {status === "sending" ? "Sending..." : "Send Message"}
                         <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                       </span>
                       <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-purple-400 opacity-0 group-hover:opacity-100 transition-opacity" />
