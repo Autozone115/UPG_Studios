@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "motion/react";
 import { Box, Layers, Monitor, Users, Sparkles, Lightbulb, Zap } from "lucide-react";
 import { Link } from "react-router";
@@ -84,7 +85,7 @@ export function About() {
   ];
 
   const getIcon = (iconName: string) => {
-    const icons: Record<string, JSX.Element> = {
+    const icons: Record<string, React.ReactElement> = {
       briefcase: (
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path d={svgPaths.p462d500} strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />

@@ -16,5 +16,6 @@
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["app", "imports"]
+  "include": ["app"],
+  "exclude": ["imports", "node_modules"]
 }
