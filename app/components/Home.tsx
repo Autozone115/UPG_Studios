@@ -87,12 +87,12 @@ export function Home() {
             {/* Name */}
             <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold mb-4">
               <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                Anival
+                Anival Ramos
               </span>
             </h1>
 
             {/* Title */}
-            <h2 className="text-2xl sm:text-3xl font-bold text-slate-100 mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-100 mb-6">
               Game Developer&nbsp;&nbsp;|&nbsp;&nbsp;VR&nbsp;&nbsp;|&nbsp;&nbsp;Interactive Systems
             </h2>
 
@@ -104,17 +104,17 @@ export function Home() {
             {/* Location and School */}
             <div className="flex flex-wrap items-center gap-4 mb-8 text-slate-400">
               <div className="flex items-center gap-2">
-                <GraduationCap className="w-4 h-4 text-cyan-400" />
-                <span className="text-sm">Senior at Utah Valley University — Expected Graduation May 2026</span>
+                <GraduationCap className="w-5 h-5 text-cyan-400" />
+                <span className="text-base">Senior at Utah Valley University — Expected Graduation May 2026</span>
               </div>
               <span className="text-slate-600">•</span>
               <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-purple-400" />
-                <span className="text-sm">Orem, UT</span>
+                <MapPin className="w-5 h-5 text-purple-400" />
+                <span className="text-base">Orem, UT</span>
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-start items-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-start items-center">
               <motion.div whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}>
                 <Link
                   to="/projects"
