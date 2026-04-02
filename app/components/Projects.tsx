@@ -137,8 +137,8 @@ export function Projects() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 * index }}
-                whileHover={{ scale: 1.02, y: -5, transition: { duration: 0.2 } }}
-                className="group relative rounded-2xl overflow-hidden bg-[rgba(15,23,43,0.5)] border border-cyan-500/20 hover:border-cyan-500/40 transition-all hover:shadow-xl hover:shadow-cyan-500/20 cursor-pointer"
+                whileHover={project.link && project.link !== "#" ? { scale: 1.02, y: -5, transition: { duration: 0.2 } } : {}}
+                className={`group relative rounded-2xl overflow-hidden bg-[rgba(15,23,43,0.5)] border border-cyan-500/20 transition-all ${project.link && project.link !== "#" ? "hover:border-cyan-500/40 hover:shadow-xl hover:shadow-cyan-500/20 cursor-pointer" : "cursor-default"}`}
               >
                 {/* Image */}
                 <div className="relative h-72 overflow-hidden">
@@ -170,7 +170,7 @@ export function Projects() {
 
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold text-slate-100 mb-3 group-hover:text-cyan-400 transition-colors">
+                  <h3 className={`text-2xl font-bold text-slate-100 mb-3 transition-colors ${project.link && project.link !== "#" ? "group-hover:text-cyan-400" : ""}`}>
                     {project.title}
                   </h3>
                   <p className="text-slate-400 text-sm mb-4 leading-relaxed">
