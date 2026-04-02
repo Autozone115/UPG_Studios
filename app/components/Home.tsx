@@ -91,12 +91,12 @@ export function Home() {
             </h1>
 
             {/* Title */}
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-100 mb-10">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-100 mb-10 font-mono">
               Game Developer&nbsp;&nbsp;|&nbsp;&nbsp;VR&nbsp;&nbsp;|&nbsp;&nbsp;Interactive Systems
             </h2>
 
             {/* Subtitle */}
-            <p className="text-xl sm:text-2xl font-semibold text-slate-200 mb-6 max-w-3xl leading-relaxed">
+            <p className="text-2xl sm:text-3xl font-semibold text-slate-200 mb-6 max-w-3xl leading-relaxed">
               I build <span className="text-cyan-400">game systems</span>, <span className="text-cyan-400">interactive mechanics</span>, and <span className="text-cyan-400">immersive VR experiences</span> using <span className="text-purple-400">Unreal Engine</span>.
             </p>
 
@@ -104,12 +104,12 @@ export function Home() {
             <div className="flex flex-wrap items-center gap-4 mb-8 text-slate-400">
               <div className="flex items-center gap-2">
                 <GraduationCap className="w-5 h-5 text-cyan-400" />
-                <span className="text-base">Senior at Utah Valley University — Expected Graduation May 2026</span>
+                <span className="text-lg">Senior at Utah Valley University — Expected Graduation May 2026</span>
               </div>
               <span className="text-slate-600">•</span>
               <div className="flex items-center gap-2">
                 <MapPin className="w-5 h-5 text-purple-400" />
-                <span className="text-base">Orem, UT</span>
+                <span className="text-lg">Orem, UT</span>
               </div>
             </div>
 
@@ -117,9 +117,8 @@ export function Home() {
               <motion.div whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}>
                 <Link
                   to="/projects"
-                  className="group relative inline-flex items-center justify-center gap-2 px-10 py-5 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg font-bold text-lg text-slate-950 hover:shadow-2xl hover:shadow-cyan-500/60 transition-all overflow-hidden"
+                  className="group relative inline-flex items-center justify-center gap-2 px-10 py-5 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg font-bold text-lg font-mono text-slate-950 hover:shadow-2xl hover:shadow-cyan-500/60 transition-all overflow-hidden"
                 >
-                  <Play className="relative z-10 w-5 h-5 shrink-0" />
                   <span className="relative z-10">See My Projects</span>
                   <ArrowRight className="relative z-10 w-5 h-5 shrink-0 group-hover:translate-x-1 transition-transform" />
                   <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-purple-400 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -128,7 +127,7 @@ export function Home() {
               <motion.div whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}>
                 <Link
                   to="/contact"
-                  className="px-10 py-5 border-2 border-cyan-500/50 rounded-lg font-bold text-lg text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/50 transition-all"
+                  className="px-10 py-5 border-2 border-cyan-500/50 rounded-lg font-bold text-lg font-mono text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/50 transition-all"
                 >
                   Get In Touch
                 </Link>
