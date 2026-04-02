@@ -67,13 +67,13 @@ export function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            {/* Greeting */}
+            {/* Greeting badge */}
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -81,26 +81,31 @@ export function Home() {
               className="inline-flex items-center gap-2 px-4 py-2 mb-6 bg-cyan-500/10 border border-cyan-500/30 rounded-full"
             >
               <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse" />
-              <span className="text-cyan-400 text-sm font-semibold">Hey there! I'm Anival</span>
+              <span className="text-cyan-400 text-sm font-semibold">Hey there!</span>
             </motion.div>
 
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
-              <span className="text-slate-100">Game Devloper | VR & Interactive Systems</span>
-              <br />
+            {/* Name */}
+            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold mb-4">
               <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                Building Games & Immersive Experiences
+                Anival
               </span>
             </h1>
-            
-            <p className="text-xl sm:text-2xl text-slate-300 mb-4 max-w-3xl mx-auto leading-relaxed">
-              I build <span className="text-cyan-400 font-semibold">gameplay systems, interactive mechanics, </span> and <span className="text-cyan-400 font-semibold">immersive VR experiences </span>using <span className="text-purple-400 font-semibold">Unreal Engine</span>
+
+            {/* Title */}
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-100 mb-6">
+              Game Developer&nbsp;&nbsp;|&nbsp;&nbsp;VR&nbsp;&nbsp;|&nbsp;&nbsp;Interactive Systems
+            </h2>
+
+            {/* Subtitle */}
+            <p className="text-xl sm:text-2xl font-semibold text-slate-200 mb-6 max-w-3xl leading-relaxed">
+              I build <span className="text-cyan-400">game systems</span>, <span className="text-cyan-400">interactive mechanics</span>, and <span className="text-cyan-400">immersive VR experiences</span> using <span className="text-purple-400">Unreal Engine</span>.
             </p>
 
             {/* Location and School */}
-            <div className="flex flex-wrap items-center justify-center gap-4 mb-8 text-slate-400">
+            <div className="flex flex-wrap items-center gap-4 mb-8 text-slate-400">
               <div className="flex items-center gap-2">
                 <GraduationCap className="w-4 h-4 text-cyan-400" />
-                <span className="text-sm">Senior at Utah Valley University</span>
+                <span className="text-sm">Senior at Utah Valley University — Expected Graduation May 2026</span>
               </div>
               <span className="text-slate-600">•</span>
               <div className="flex items-center gap-2">
@@ -109,7 +114,7 @@ export function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-start items-start">
               <motion.div whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}>
                 <Link
                   to="/projects"
