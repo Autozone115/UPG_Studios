@@ -46,7 +46,7 @@ export function Home() {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-start justify-center overflow-hidden pt-32">
         {/* Background */}
         <div className="absolute inset-0">
           <ImageWithFallback
@@ -73,15 +73,14 @@ export function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            {/* Greeting badge */}
+            {/* Greeting */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="inline-flex items-center gap-2 px-4 py-2 mb-6 bg-cyan-500/10 border border-cyan-500/30 rounded-full"
+              className="mb-3"
             >
-              <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse" />
-              <span className="text-cyan-400 text-sm font-semibold">Hey there!</span>
+              <span className="text-slate-300 text-xl font-medium">Hey there, I'm<span className="text-cyan-400"> . . .</span></span>
             </motion.div>
 
             {/* Name */}
@@ -92,7 +91,7 @@ export function Home() {
             </h1>
 
             {/* Title */}
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-100 mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-100 mb-10">
               Game Developer&nbsp;&nbsp;|&nbsp;&nbsp;VR&nbsp;&nbsp;|&nbsp;&nbsp;Interactive Systems
             </h2>
 
@@ -118,7 +117,7 @@ export function Home() {
               <motion.div whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}>
                 <Link
                   to="/projects"
-                  className="group relative inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg font-semibold text-slate-950 hover:shadow-2xl hover:shadow-cyan-500/60 transition-all overflow-hidden"
+                  className="group relative inline-flex items-center justify-center gap-2 px-10 py-5 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg font-bold text-lg text-slate-950 hover:shadow-2xl hover:shadow-cyan-500/60 transition-all overflow-hidden"
                 >
                   <Play className="relative z-10 w-5 h-5 shrink-0" />
                   <span className="relative z-10">See My Projects</span>
@@ -129,7 +128,7 @@ export function Home() {
               <motion.div whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}>
                 <Link
                   to="/contact"
-                  className="px-8 py-4 border-2 border-cyan-500/50 rounded-lg font-semibold text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/50 transition-all"
+                  className="px-10 py-5 border-2 border-cyan-500/50 rounded-lg font-bold text-lg text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/50 transition-all"
                 >
                   Get In Touch
                 </Link>
