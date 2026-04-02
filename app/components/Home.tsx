@@ -46,7 +46,7 @@ export function Home() {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-start justify-center overflow-hidden pt-32">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden py-16">
         {/* Background */}
         <div className="absolute inset-0">
           <ImageWithFallback
@@ -67,7 +67,7 @@ export function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -96,12 +96,12 @@ export function Home() {
             </h2>
 
             {/* Subtitle */}
-            <p className="text-2xl sm:text-3xl font-semibold text-slate-200 mb-6 max-w-3xl leading-relaxed">
+            <p className="text-2xl sm:text-3xl font-semibold text-slate-200 mb-6 max-w-3xl mx-auto leading-relaxed">
               I build <span className="text-cyan-400">game systems</span>, <span className="text-cyan-400">interactive mechanics</span>, and <span className="text-cyan-400">immersive VR experiences</span> using <span className="text-purple-400">Unreal Engine</span>.
             </p>
 
             {/* Location and School */}
-            <div className="flex flex-wrap items-center gap-4 mb-8 text-slate-400">
+            <div className="flex flex-wrap items-center justify-center gap-4 mb-8 text-slate-400">
               <div className="flex items-center gap-2">
                 <GraduationCap className="w-5 h-5 text-cyan-400" />
                 <span className="text-lg">Senior at Utah Valley University — Expected Graduation May 2026</span>
@@ -113,7 +113,7 @@ export function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-start items-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.div whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}>
                 <Link
                   to="/projects"
