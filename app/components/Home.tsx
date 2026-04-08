@@ -50,7 +50,7 @@ export function Home() {
         {/* Background */}
         <div className="absolute inset-0">
           <ImageWithFallback
-            src="https://images.unsplash.com/photo-1559818447-969ea3aa2fbd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxWUiUyMGhlYWRzZXQlMjBuZW9uJTIwY3liZXJwdW5rfGVufDF8fHx8MTc3NDY2NjI4MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            src="/images/hero-bg.png"
             alt="VR Development"
             className="w-full h-full object-cover"
           />
