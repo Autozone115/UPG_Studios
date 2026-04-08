@@ -44,8 +44,8 @@ export function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "ramosbusiness1818@gmail.com",
-      href: "mailto:ramosbusiness1818@gmail.com",
+      value: "xytocstudios@gmail.com",
+      href: "mailto:xytocstudios@gmail.com",
     },
     {
       icon: MapPin,
