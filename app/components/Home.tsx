@@ -170,32 +170,50 @@ export function Home() {
 
       {/* About Me Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 relative">
-        <div className="max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-                A Developer Who Codes First
-              </span>
-            </h2>
-            <div className="space-y-4 text-lg text-slate-300 leading-relaxed">
-              <p>
-                I'm not your typical game developer. While I can create 3D assets and environments, 
-                <span className="text-cyan-400 font-semibold"> my real passion is programming interactive systems</span> and 
-                building gameplay mechanics that makes gameplay and VR experiences come alive.
-              </p>
-              <p>I'm a game developer focused on building gameplay systems, interactive mechanics, and immersive VR experiences in Unreal Engine. I'm currently finishing my senior year at <span className="text-purple-400 font-semibold">Utah Valley University</span>, I've already published a VR training application on the Meta Quest store.</p>
-              <p className="text-slate-400 text-base italic">
-                3D art is my tool, not my identity. I create assets to serve the games I build, because at the end of the day, 
-                I'm a <span className="text-cyan-400">developer</span> who happens to know 3D.
-              </p>
-            </div>
-          </motion.div>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Text */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+                <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                  A Developer Who Codes First
+                </span>
+              </h2>
+              <div className="space-y-4 text-lg text-slate-300 leading-relaxed">
+                <p>
+                  I'm not your typical game developer. While I can create 3D assets and environments,
+                  <span className="text-cyan-400 font-semibold"> my real passion is programming interactive systems</span> and
+                  building gameplay mechanics that make gameplay and VR experiences come alive.
+                </p>
+                <p>I'm a game developer focused on building gameplay systems, interactive mechanics, and immersive VR experiences in Unreal Engine. I'm currently finishing my senior year at <span className="text-purple-400 font-semibold">Utah Valley University</span>, and I've already published a VR training application on the Meta Quest store.</p>
+                <p className="text-slate-400 text-base italic">
+                  3D art is my tool, not my identity. I create assets to serve the games I build, because at the end of the day,
+                  I'm a <span className="text-cyan-400">developer</span> who happens to know 3D.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Photos */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="grid grid-cols-2 gap-4"
+            >
+              <div className="rounded-xl overflow-hidden border border-cyan-500/20 shadow-lg shadow-cyan-500/10 aspect-[3/4]">
+                <img src="/images/me-1.jpg" alt="Anival using VR headset" className="w-full h-full object-cover" style={{objectPosition: "50% 20%"}} />
+              </div>
+              <div className="rounded-xl overflow-hidden border border-purple-500/20 shadow-lg shadow-purple-500/10 aspect-[3/4] mt-8">
+                <img src="/images/me-2.jpg" alt="Anival at graduation" className="w-full h-full object-cover" style={{objectPosition: "50% 15%"}} />
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 

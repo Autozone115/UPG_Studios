@@ -56,7 +56,10 @@
       "Bash(PYTHON=\"/c/Users/ramos/AppData/Local/Programs/Thonny/python.exe\")",
       "Bash(\"$PYTHON\" -c \"import reportlab; print\\(''reportlab OK'', reportlab.Version\\)\")",
       "Bash(\"$PYTHON\" \"C:/Users/ramos/OneDrive/Documents/Portfolio/FigmaPort/build_resume.py\")",
-      "Bash(powershell.exe -Command \"Copy-Item ''D:\\\\AnivalWorkInfo\\\\ProCareer\\\\Resume_Anival_Ramos_1Page.pdf'' ''C:\\\\Users\\\\ramos\\\\OneDrive\\\\Documents\\\\Portfolio\\\\FigmaPort\\\\public\\\\resume.pdf''\")"
+      "Bash(powershell.exe -Command \"Copy-Item ''D:\\\\AnivalWorkInfo\\\\ProCareer\\\\Resume_Anival_Ramos_1Page.pdf'' ''C:\\\\Users\\\\ramos\\\\OneDrive\\\\Documents\\\\Portfolio\\\\FigmaPort\\\\public\\\\resume.pdf''\")",
+      "Bash(\"$PYTHON\" \"C:/Users/ramos/OneDrive/Documents/Portfolio/FigmaPort/build_resume_upwork.py\")",
+      "Bash(powershell.exe -Command \"Get-ChildItem ''C:\\\\Users\\\\ramos\\\\OneDrive\\\\Pictures\\\\Camera Roll\\\\ME'' | Select-Object Name\")",
+      "Bash(powershell.exe -Command \"Copy-Item ''C:\\\\Users\\\\ramos\\\\OneDrive\\\\Pictures\\\\Camera Roll\\\\ME\\\\Image.jpg'' ''C:\\\\Users\\\\ramos\\\\OneDrive\\\\Documents\\\\Portfolio\\\\FigmaPort\\\\public\\\\images\\\\me-1.jpg''; Copy-Item ''C:\\\\Users\\\\ramos\\\\OneDrive\\\\Pictures\\\\Camera Roll\\\\ME\\\\Image \\(1\\).jpg'' ''C:\\\\Users\\\\ramos\\\\OneDrive\\\\Documents\\\\Portfolio\\\\FigmaPort\\\\public\\\\images\\\\me-2.jpg''\")"
     ]
   }
 }
