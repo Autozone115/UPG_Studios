@@ -94,7 +94,7 @@ export function Resume() {
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-400 mb-6">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-cyan-400" />
-                <span>xytocstudios@gmail.com</span>
+                <span>ramosbusiness1818@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
                 
