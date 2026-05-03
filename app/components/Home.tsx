@@ -104,7 +104,7 @@ export function Home() {
             <div className="flex flex-wrap items-center gap-4 mb-8 text-slate-400">
               <div className="flex items-center gap-2">
                 <GraduationCap className="w-5 h-5 text-cyan-400" />
-                <span className="text-lg">Senior at Utah Valley University — Expected Graduation May 2026</span>
+                <span className="text-lg">Utah Valley University — B.S. Animation & Game Development, Class of 2026</span>
               </div>
               <span className="text-slate-600">•</span>
               <div className="flex items-center gap-2">
@@ -190,7 +190,7 @@ export function Home() {
                   <span className="text-cyan-400 font-semibold"> my real passion is programming interactive systems</span> and
                   building gameplay mechanics that make gameplay and VR experiences come alive.
                 </p>
-                <p>I'm a game developer focused on building gameplay systems, interactive mechanics, and immersive VR experiences in Unreal Engine. I'm currently finishing my senior year at <span className="text-purple-400 font-semibold">Utah Valley University</span>, and I've already published a VR training application on the Meta Quest store.</p>
+                <p>I'm a game developer focused on building gameplay systems, interactive mechanics, and immersive VR experiences in Unreal Engine. A graduate of <span className="text-purple-400 font-semibold">Utah Valley University</span> with a B.S. in Animation & Game Development, I've already published a VR training application on the Meta Quest store.</p>
                 <p className="text-slate-400 text-base italic">
                   3D art is my tool, not my identity. I create assets to serve the games I build, because at the end of the day,
                   I'm a <span className="text-cyan-400">developer</span> who happens to know 3D.

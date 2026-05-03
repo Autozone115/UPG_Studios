@@ -71,7 +71,7 @@ export function About() {
     {
       year: "2022 - Present",
       title: "Animation & Game Development Student",
-      company: "Utah Valley University - Senior Year",
+      company: "Utah Valley University — B.S. Animation & Game Development",
       description:
         "Studying Animation & Game Development with emphasis in Extended Reality (XR). Building VR experiences, simulation training environments, and interactive storytelling projects.",
     },
@@ -166,7 +166,7 @@ export function About() {
 
               <p className="text-slate-400 text-lg mb-6 leading-relaxed">
                 I'm Anival Ramos, a game devloper specializing in Unreal Engine, with a focus on VR and interactive systems. 
-                Currently a senior at Utah Valley University studying Animation & Game Development with an emphasis in XR.
+                Graduate of Utah Valley University with a B.S. in Animation & Game Development, emphasis in XR.
               </p>
 
               <p className="text-slate-400 text-lg mb-8 leading-relaxed">
